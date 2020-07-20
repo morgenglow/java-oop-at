@@ -16,7 +16,7 @@ public abstract class BaseTest {
 
     @BeforeEach
     public void baseTestBeforeAll() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-popup-blocking");
